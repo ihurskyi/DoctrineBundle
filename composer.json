@@ -1,7 +1,7 @@
 {
-    "name": "doctrine/doctrine-bundle",
-    "type": "symfony-bundle",
-    "description": "Symfony DoctrineBundle",
+    "name": "easyframework/doctrine-bundle",
+    "type": "easy-bundle",
+    "description": "Easy Framework DoctrineBundle",
     "keywords": ["DBAL", "ORM", "Database", "Persistence"],
     "homepage": "http://www.doctrine-project.org",
     "license": "MIT",
@@ -36,7 +36,7 @@
         "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
     },
     "autoload": {
-        "psr-0": { "Doctrine\\Bundle\\DoctrineBundle": "" }
+        "psr-0": {"Doctrine\\Bundle\\DoctrineBundle": ""}
     },
     "target-dir": "Doctrine/Bundle/DoctrineBundle",
     "minimum-stability": "dev",
