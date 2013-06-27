@@ -11,11 +11,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Doctrine\Bundle\DoctrineBundle\Command\Proxy;
 
-use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper;
 use Doctrine\ORM\Tools\Console\Helper\EntityManagerHelper;
+use Easy\Mvc\Console\Application;
 
 /**
  * Provides some helper and convenience methods to configure doctrine commands in the context of bundles
@@ -25,6 +26,7 @@ use Doctrine\ORM\Tools\Console\Helper\EntityManagerHelper;
  */
 abstract class DoctrineCommandHelper
 {
+
     /**
      * Convenience method to push the helper sets of a given entity manager into the application.
      *
@@ -52,4 +54,5 @@ abstract class DoctrineCommandHelper
         $helperSet = $application->getHelperSet();
         $helperSet->set(new ConnectionHelper($connection), 'db');
     }
+
 }
